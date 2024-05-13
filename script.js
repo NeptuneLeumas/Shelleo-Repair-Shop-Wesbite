@@ -60,3 +60,35 @@ document.addEventListener('DOMContentLoaded', () => {
       }); 
   }); 
 });
+
+// Script for Modal
+const modal = document.querySelector('.modal');
+const modalContent = document.querySelector('.modal__content');
+const mclose = document.querySelector('.modal__close');
+const modalImg = document.querySelector('.modal__img');
+const productList = document.querySelectorAll('.pro__list');
+const title = document.querySelector('.detail__title');
+const cost = document.querySelector('.detail__price');
+
+productList.forEach((list, index) => {
+  const view = list.querySelector('.pro__viewBtn');
+  const productImg = list.querySelector('.pro__img').getAttribute('src');
+
+  view.addEventListener('click', () => {
+    modal.classList.add('modal--bg');
+    modalContent.classList.add('modal__content--show');
+    modalImg.setAttribute('src', productImg);
+    title.innerText = `product title ${index + 1}`;
+    cost.innerText
+  });
+});
+
+close.addEventListener('click', () => {
+  modal.classList.remove('modal--bg');
+  modalContent.classList.remove('modal__content--show');
+});
+
+modal.addEventListener('click', () => {
+  modal.classList.remove('modal--bg');
+  modalContent.classList.remove('modal__content--show');
+});
