@@ -142,7 +142,7 @@ body {
 /* Home Page */
 #hero {
   background-image: url(img/Home/hero.png);
-  height: 90vh;
+  min-height: 90vh;
   width: 100%;
   background-size: cover;
   background-position: top 25% right 0;
@@ -234,7 +234,7 @@ body {
   flex-wrap: wrap;
 }
 
-#product1 .pro {`
+#product1 .pro {
   height: fit-content;
   width: 15%;
   min-width: 200px;
@@ -287,6 +287,7 @@ body {
   position: absolute;
   bottom: 10px;
   right: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 #banner {
@@ -428,7 +429,7 @@ body {
 }
 #newsletter input {
   height: 3.125rem;
-  padding: 0. 1.25em;
+  padding: 0 1.25em;
   font-size: 14px;
   width: 100%;
   border: 1px solid transparent;
@@ -813,6 +814,31 @@ textarea:focus, input:focus {
   }
   #newsletter .form {
     width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+  }
+
+  #mobile {
+    display: flex;
+  }
+
+  #product1 .pro-container {
+    justify-content: center;
+  }
+
+  #feature {
+    padding: 0 20px;
   }
 }
 
