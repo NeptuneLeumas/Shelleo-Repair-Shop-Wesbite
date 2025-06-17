@@ -141,7 +141,7 @@ body {
 
 /* Home Page */
 #hero {
-  background-image: url(img/Home/hero.png);
+  background-image: url(/assets/img//Home/hero.png);
   min-height: 90vh;
   width: 100%;
   background-size: cover;
@@ -171,7 +171,7 @@ body {
   text-decoration: underline;
 }
 #hero button {
-  background-image: url(img/button.png);
+  background-image: url(/assets/img//button.png);
   background-color: transparent;
   background-size: 100% 100%;
   color: #088178;
@@ -250,6 +250,7 @@ body {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
 #product1 .pro img {
+  width: 100%;
   height: 70%;
   border-radius: 10px;
 }
@@ -296,7 +297,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(img/Home/b1.png);
+  background-image: url(/assets/img//Home/b1.png);
   width: 100%;
   height: 30vh;
   background-size: cover;
@@ -331,7 +332,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(img/Home/sale1.png);
+  background-image: url(/assets/img//Home/sale1.png);
   min-width: 48%;
   height: 50vh;
   background-size: cover;
@@ -339,7 +340,7 @@ body {
   padding: 30px;
 }
 #sm-banner .banner-box2 {
-  background-image: url(img/Home/sale5.png);
+  background-image: url(/assets/img//Home/sale5.png);
   margin-top: 20px;
 }
 #sm-banner h4 {
@@ -375,7 +376,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(img/Home/service1.png);
+    background-image: url(/assets/img//Home/service1.png);
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -384,10 +385,10 @@ body {
     margin-bottom: 20px;
 }
 #banner3 .banner-box2 {
-  background-image: url(img/Home/service2.png);
+  background-image: url(/assets/img//Home/service2.png);
 }
 #banner3 .banner-box3 {
-  background-image: url(img/Home/service3.png);
+  background-image: url(/assets/img//Home/service3.png);
 }
 #banner3 h2 {
   color: #fff;
@@ -399,13 +400,16 @@ body {
   font-weight: 800;
   font-size: 15px;
 }
+#banner3 a {
+  text-decoration: none;
+}
 
 #newsletter {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url(img/Newsletter/b14.png);
+  background-image: url(/assets/img//Newsletter/b14.png);
   background-repeat: no-repeat;
   background-position: 20% 30%;
   background-color: #041e42;
@@ -572,6 +576,7 @@ textarea:focus, input:focus {
 
 #pagination {
   text-align: center;
+  background-color: #2B164D;
 }
 #pagination a {
   text-decoration: none;
@@ -596,7 +601,7 @@ textarea:focus, input:focus {
   color: #fff;
 }
 #page-header.shop-header {
-  background-image: url(img/Shop/b2.png);
+  background-image: url(/assets/img//Shop/b2.png);
   background-size: cover;
   height: 30vh;
   background-repeat: no-repeat;
@@ -605,7 +610,7 @@ textarea:focus, input:focus {
 
 /* About Page */
 #page-header.about-header {
-  background-image: url(img/About/b3.png);
+  background-image: url(/assets/img//About/b3.png);
   background-size: cover;
   height: 30vh;
   background-repeat: no-repeat;
@@ -782,7 +787,7 @@ textarea:focus, input:focus {
     width: 28%;
   }
   #page-header.about-header {
-    background-image: url(img/About/b3.png);
+    background-image: url(/assets/img//About/b3.png);
     background-size: cover;
     height: 20vh;
     background-repeat: no-repeat;
@@ -940,4 +945,6 @@ textarea:focus, input:focus {
     width: 100%;
   }
 }
-
+.modal__content {
+  display: none;
+}
